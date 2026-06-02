@@ -1,99 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alyssa Drexler Grooming Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Alyssa Drexler</title>
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Your custom CSS -->
-  <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">Alyssa Drexler Grooming Portfolio</a>
+        <a class="navbar-brand fw-bold" href="index.html">Alyssa Drexler</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="resume.html">Resume</a>
-          </li>
-        </ul>
-      </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active fw-bold" href="index.html">Portfolio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Me</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+
+            </ul>
+        </div>
     </div>
-  </nav>
+</nav>
 
-  <!-- Hero Section -->
-  <main class="container py-5">
-    <section class="text-center mb-5">
-      <h1 class="display-4 fw-bold">Grooming Portfolio</h1>
-      <p class="lead">
-        Showcasing my grooming experience, before-and-after work, and professional background.
-      </p>
-      <a href="about.html" class="btn btn-primary">Learn More About Me</a>
-    </section>
+<div class="container py-5">
 
-    <!-- Portfolio Preview -->
-    <section>
-      <h2 class="mb-4">Portfolio Highlights</h2>
-
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="images/grooming-1.jpg" class="card-img-top" alt="Dog grooming example">
-            <div class="card-body">
-              <h5 class="card-title">Full Groom</h5>
-              <p class="card-text">Example of a complete grooming service including bath, trim, and styling.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="images/grooming-2.jpg" class="card-img-top" alt="Dog grooming example">
-            <div class="card-body">
-              <h5 class="card-title">Before & After</h5>
-              <p class="card-text">A clean transformation showing attention to detail and coat care.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="images/grooming-3.jpg" class="card-img-top" alt="Dog grooming example">
-            <div class="card-body">
-              <h5 class="card-title">Breed-Specific Style</h5>
-              <p class="card-text">Styled grooming example tailored to the dog’s breed and coat type.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-light border-top py-3 mt-5">
-    <div class="container text-center">
-      <small>&copy; 2026 Alyssa Drexler | Dog Grooming Portfolio</small>
+    <div class="text-center mb-5">
+        <h1>Portfolio</h1>
+        <p class="lead">
+            A collection of grooming transformations showcasing professional grooming services,
+            coat maintenance, styling, and breed-specific trims.
+        </p>
     </div>
-  </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Goose -->
+    <div class="card shadow-sm mb-5">
+        <div class="card-body">
+            <h2 class="text-center mb-4">Goose</h2>
+
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <h5>Before</h5>
+                    <img src="before_and_after/goose-before.jpg"
+                         class="img-fluid rounded shadow"
+                         alt="Goose Before">
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <h5>After</h5>
+                    <img src="before_and_after/goose-after.jpg"
+                         class="img-fluid rounded shadow"
+                         alt="Goose After">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Izzy -->
+    <div class="card shadow-sm mb-5">
+        <div class="card-body">
+            <h2 class="text-center mb-4">Izzy</h2>
+
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <h5>Before</h5>
+                    <img src="before_and_after/izzy-before.jpg"
+                         class="img-fluid rounded shadow"
+                         alt="Izzy Before">
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <h5>After</h5>
+                    <img src="before_and_after/izzy-after.jpg"
+                         class="img-fluid rounded shadow"
+                         alt="Izzy After">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pippa -->
+    <div class="card shadow-sm mb-5">
+        <div class="card-body">
+            <h2 class="text-center mb-4">Pippa</h2>
+
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <h5>Before</h5>
+                    <img src="before_and_after/pippa-before.jpg"
+                         class="img-fluid rounded shadow"
+                         alt="Pippa Before">
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <h5>After</h5>
+                    <img src="before_and_after/pippa-after.jpg"
+                         class="img-fluid rounded shadow"
+                         alt="Pippa After">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pippin -->
+    <div class="card shadow-sm mb-5">
+        <div class="card-body">
+            <h2 class="text-center mb-4">Pippin</h2>
+
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <h5>Before</h5>
+                    <img src="before_and_after/pippin-before.jpg"
+                         class="img-fluid rounded shadow"
+                         alt="Pippin Before">
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <h5>After</h5>
+                    <img src="before_and_after/pippin-after.jpg"
+                         class="img-fluid rounded shadow"
+                         alt="Pippin After">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shelby -->
+    <div class="card shadow-sm mb-5">
+        <div class="card-body">
+            <h2 class="text-center mb-4">Shelby</h2>
+
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <h5>Before</h5>
+                    <img src="before_and_after/shelby-before.jpg"
+                         class="img-fluid rounded shadow"
+                         alt="Shelby Before">
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <h5>After</h5>
+                    <img src="before_and_after/shelby-after.jpg"
+                         class="img-fluid rounded shadow"
+                         alt="Shelby After">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
