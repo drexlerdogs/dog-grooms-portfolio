@@ -72,9 +72,8 @@ footer {
 
 .gallery-preview {
     height: 450px;
-    object-fit: contain;
-    background-color: #fff1e8;
-    padding: 12px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .masonry-gallery {
