@@ -79,7 +79,6 @@ footer {
     width: 100%;
     object-fit: cover;
 }
-
 .masonry-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -87,17 +86,8 @@ footer {
 }
 
 .gallery-card {
-    height: 650px;
+    height: 520px;
     overflow: hidden;
-    border-radius: 16px;
-}
-
-.gallery-img {
-    width: 100%;
-    height: 450px;
-
-    object-fit: cover;
-    cursor: pointer;
     border-radius: 16px;
 
     box-shadow:
@@ -109,12 +99,20 @@ footer {
         box-shadow 0.25s ease;
 }
 
-.gallery-img:hover {
+.gallery-card:hover {
     transform: translateY(-4px);
 
     box-shadow:
         0 16px 35px rgba(0,0,0,0.22),
         0 6px 12px rgba(0,0,0,0.12);
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    display: block;
 }
 
 @media (max-width: 992px) {
