@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +52,27 @@
         </a>
     </div>
 
-    <div id="dog-gallery"></div>
+    <div class="card shadow-sm">
+        <div class="card-body">
+
+            <div id="beforeAfterCarousel" class="carousel slide">
+
+                <div class="carousel-inner" id="before-after-slides">
+                    <!-- Slides are created by JavaScript -->
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#beforeAfterCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#beforeAfterCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+            </div>
+
+        </div>
+    </div>
 
 </div>
 
@@ -68,47 +87,30 @@ const dogs = [
     "shelby"
 ];
 
-const gallery = document.getElementById("dog-gallery");
+const slidesContainer = document.getElementById("before-after-slides");
 
-dogs.forEach(dog => {
+dogs.forEach((dog, index) => {
     const displayName = dog.charAt(0).toUpperCase() + dog.slice(1);
-    const carouselId = `${dog}Carousel`;
+    const activeClass = index === 0 ? "active" : "";
 
-    gallery.innerHTML += `
-        <div class="card shadow-sm mb-5">
-            <div class="card-body">
+    slidesContainer.innerHTML += `
+        <div class="carousel-item ${activeClass}">
+            <h2 class="text-center mb-4">${displayName}</h2>
 
-                <h2 class="text-center mb-4">${displayName}</h2>
-
-                <div id="${carouselId}" class="carousel slide dog-carousel">
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active text-center">
-                            <h5>Before</h5>
-                            <img src="before_and_after/${dog}-before.jpg"
-                                 class="d-block mx-auto rounded shadow carousel-dog-img"
-                                 alt="${displayName} Before">
-                        </div>
-
-                        <div class="carousel-item text-center">
-                            <h5>After</h5>
-                            <img src="before_and_after/${dog}-after.jpg"
-                                 class="d-block mx-auto rounded shadow carousel-dog-img"
-                                 alt="${displayName} After">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#${carouselId}" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button" data-bs-target="#${carouselId}" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-5 text-center mb-4 mb-md-0">
+                    <h5>Before</h5>
+                    <img src="before_and_after/${dog}-before.jpg"
+                         class="img-fluid rounded shadow before-after-img"
+                         alt="${displayName} Before">
                 </div>
 
+                <div class="col-md-5 text-center">
+                    <h5>After</h5>
+                    <img src="before_and_after/${dog}-after.jpg"
+                         class="img-fluid rounded shadow before-after-img"
+                         alt="${displayName} After">
+                </div>
             </div>
         </div>
     `;
