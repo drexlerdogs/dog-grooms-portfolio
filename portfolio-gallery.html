@@ -92,13 +92,15 @@ const gallery = document.getElementById("gallery-grid");
 
 dogs.forEach(dog => {
     gallery.innerHTML += `
-        <img
-            src="gallery/${dog}.jpg"
-            class="gallery-img"
-            alt="${dog}"
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-            onclick="showImage('gallery/${dog}.jpg', '${dog}')">
+        <div class="gallery-card">
+            <img
+                src="gallery/${dog}.jpg"
+                class="gallery-img"
+                alt="${dog}"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                onclick="showImage('gallery/${dog}.jpg', '${dog}')">
+        </div>
     `;
 });
 
