@@ -234,3 +234,17 @@ footer {
     gap: 16px;
     flex-wrap: wrap;
 }
+
+.before-after-img {
+    max-height: 520px;
+    width: auto;
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow:
+        0 8px 20px rgba(0,0,0,0.15),
+        0 2px 6px rgba(0,0,0,0.08);
+}
+
+.before-after-controls {
+    padding-top: 10px;
+}
