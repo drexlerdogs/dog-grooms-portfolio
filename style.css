@@ -3,3 +3,19 @@
     height: 300px;
     object-fit: cover;
 }
+
+.carousel-dog-img {
+    max-height: 500px;
+    width: auto;
+    max-width: 100%;
+}
+
+.dog-carousel {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}
