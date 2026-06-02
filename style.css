@@ -79,12 +79,15 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+    align-items: start;
 }
 
 .gallery-card {
     height: 520px;
     overflow: hidden;
     border-radius: 16px;
+
+    display: block;
 
     box-shadow:
         0 8px 20px rgba(0,0,0,0.15),
