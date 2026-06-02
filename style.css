@@ -82,6 +82,12 @@ footer {
     gap: 24px;
 }
 
+.gallery-card {
+    height: 450px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
 .gallery-img {
     width: 100%;
     height: 450px;
