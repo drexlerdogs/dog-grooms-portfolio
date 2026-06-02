@@ -67,47 +67,25 @@
     </div>
 </footer>
 
+<div class="modal fade" id="imageModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <img id="modalImage" src="" alt="" class="img-fluid rounded">
+            </div>
+        </div>
+    </div>
+</div>
+
 <script>
 const dogs = [
-    "Argos",
-    "Axle",
-    "Jada",
-    "Larry",
-    "Lumi",
-    "Miles",
-    "Ruca",
-    "Simi",
-    "Smores",
-    "Teddy",
-    "Woola",
-    "Zoey",
-
-    "beulah-after",
-    "bode-after",
-    "goose-after",
-    "izzy-after",
-    "pippa-after",
-    "pippin-after",
-    "shelby-after",
-
-    "dog1",
-    "dog2",
-    "dog3",
-    "dog4",
-    "dog5",
-    "dog6",
-    "dog7",
-    "dog8",
-    "dog9",
-    "dog10",
-    "dog11",
-    "dog12",
-    "dog13",
-    "dog14",
-    "dog15",
-    "dog16",
-    "dog17",
-    "dog18"
+    "Argos", "Axle", "Jada", "Larry", "Lumi", "Miles",
+    "Ruca", "Simi", "Smores", "Teddy", "Woola", "Zoey",
+    "beulah-after", "bode-after", "goose-after", "izzy-after",
+    "pippa-after", "pippin-after", "shelby-after",
+    "dog1", "dog2", "dog3", "dog4", "dog5", "dog6",
+    "dog7", "dog8", "dog9", "dog10", "dog11", "dog12",
+    "dog13", "dog14", "dog15", "dog16", "dog17", "dog18"
 ];
 
 const gallery = document.getElementById("gallery-grid");
@@ -117,9 +95,17 @@ dogs.forEach(dog => {
         <img
             src="gallery/${dog}.jpg"
             class="gallery-img"
-            alt="${dog}">
+            alt="${dog}"
+            data-bs-toggle="modal"
+            data-bs-target="#imageModal"
+            onclick="showImage('gallery/${dog}.jpg', '${dog}')">
     `;
 });
+
+function showImage(src, alt) {
+    document.getElementById("modalImage").src = src;
+    document.getElementById("modalImage").alt = alt;
+}
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
