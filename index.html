@@ -1,17 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-        <h1>Welcome to My Website</h1>  
-    </main>
-    <script src="index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dog Grooming Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your custom CSS -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Dog Grooming Portfolio</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.html">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <main class="container py-5">
+    <section class="text-center mb-5">
+      <h1 class="display-4 fw-bold">Dog Grooming Portfolio</h1>
+      <p class="lead">
+        Showcasing my grooming experience, before-and-after work, and professional background.
+      </p>
+      <a href="about.html" class="btn btn-primary">Learn More About Me</a>
+    </section>
+
+    <!-- Portfolio Preview -->
+    <section>
+      <h2 class="mb-4">Portfolio Highlights</h2>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="images/grooming-1.jpg" class="card-img-top" alt="Dog grooming example">
+            <div class="card-body">
+              <h5 class="card-title">Full Groom</h5>
+              <p class="card-text">Example of a complete grooming service including bath, trim, and styling.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="images/grooming-2.jpg" class="card-img-top" alt="Dog grooming example">
+            <div class="card-body">
+              <h5 class="card-title">Before & After</h5>
+              <p class="card-text">A clean transformation showing attention to detail and coat care.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="images/grooming-3.jpg" class="card-img-top" alt="Dog grooming example">
+            <div class="card-body">
+              <h5 class="card-title">Breed-Specific Style</h5>
+              <p class="card-text">Styled grooming example tailored to the dog’s breed and coat type.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light border-top py-3 mt-5">
+    <div class="container text-center">
+      <small>&copy; 2026 Your Name | Dog Grooming Portfolio</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
