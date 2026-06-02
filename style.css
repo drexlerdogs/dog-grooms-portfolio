@@ -77,11 +77,17 @@ footer {
     padding: 12px;
 }
 
+.masonry-gallery {
+    columns: 3;
+    column-gap: 24px;
+}
+
 .gallery-img {
     width: 100%;
-    height: 450px;
-    object-fit: contain;
-    background-color: white;
+    height: auto;
+    display: block;
+    margin-bottom: 24px;
+
     border-radius: 16px;
 
     box-shadow:
@@ -101,8 +107,16 @@ footer {
         0 6px 12px rgba(0,0,0,0.12);
 }
 
-.gallery-img:hover {
-    transform: scale(1.02);
+@media (max-width: 992px) {
+    .masonry-gallery {
+        columns: 2;
+    }
+}
+
+@media (max-width: 576px) {
+    .masonry-gallery {
+        columns: 1;
+    }
 }
 
 .before-after-img {
