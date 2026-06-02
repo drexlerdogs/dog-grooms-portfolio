@@ -87,7 +87,7 @@ footer {
     height: 450px;
 
     object-fit: cover;
-
+    cursor: pointer;
     border-radius: 16px;
 
     box-shadow:
