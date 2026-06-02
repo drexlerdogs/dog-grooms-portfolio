@@ -1,1 +1,121 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After Gallery - Alyssa Drexler</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Alyssa Drexler</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active fw-bold" href="index.html">Portfolio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Me</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container py-5">
+
+    <div class="text-center mb-5">
+        <h1>Before & After Gallery</h1>
+        <p class="lead">
+            Grooming transformations showcasing coat maintenance, styling, and professional finishing work.
+        </p>
+
+        <a href="index.html" class="btn btn-outline-primary mt-3">
+            ← Back to Portfolio
+        </a>
+    </div>
+
+    <div id="dog-gallery"></div>
+
+</div>
+
+<script>
+const dogs = [
+    "beulah",
+    "bode",
+    "goose",
+    "izzy",
+    "pippa",
+    "pippin",
+    "shelby"
+];
+
+const gallery = document.getElementById("dog-gallery");
+
+dogs.forEach(dog => {
+    const displayName = dog.charAt(0).toUpperCase() + dog.slice(1);
+    const carouselId = `${dog}Carousel`;
+
+    gallery.innerHTML += `
+        <div class="card shadow-sm mb-5">
+            <div class="card-body">
+
+                <h2 class="text-center mb-4">${displayName}</h2>
+
+                <div id="${carouselId}" class="carousel slide dog-carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active text-center">
+                            <h5>Before</h5>
+                            <img src="before_and_after/${dog}-before.jpg"
+                                 class="d-block mx-auto rounded shadow carousel-dog-img"
+                                 alt="${displayName} Before">
+                        </div>
+
+                        <div class="carousel-item text-center">
+                            <h5>After</h5>
+                            <img src="before_and_after/${dog}-after.jpg"
+                                 class="d-block mx-auto rounded shadow carousel-dog-img"
+                                 alt="${displayName} After">
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#${carouselId}" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#${carouselId}" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    `;
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
